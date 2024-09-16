@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/PedroVMota/website-porfolio/static/css/main.692dd873.css",
+    "main.js": "/PedroVMota/website-porfolio/static/js/main.5de8f76c.js",
+    "static/js/453.8566eefc.chunk.js": "/PedroVMota/website-porfolio/static/js/453.8566eefc.chunk.js",
+    "index.html": "/PedroVMota/website-porfolio/index.html",
+    "main.692dd873.css.map": "/PedroVMota/website-porfolio/static/css/main.692dd873.css.map",
+    "main.5de8f76c.js.map": "/PedroVMota/website-porfolio/static/js/main.5de8f76c.js.map",
+    "453.8566eefc.chunk.js.map": "/PedroVMota/website-porfolio/static/js/453.8566eefc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.692dd873.css",
+    "static/js/main.5de8f76c.js"
+  ]
+}
