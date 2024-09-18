@@ -3,35 +3,13 @@ import { NavLink } from 'react-router-dom';
 
 const Menu = () => {
   return (
-    <nav className="">
-      <ul className="flex justify-center items-center pt-4">
-        <li>
-          <NavLink 
-            to="/" 
-            className={({ isActive }) => isActive ? "container-link text-gray-900" : "container-link"} 
-            end
-          >
-            Home
-          </NavLink>
-        </li>
-        <li>
-          <NavLink 
-            to="/about" 
-            className={({ isActive }) => isActive ? "container-link text-gray-900" : "container-link"}
-          >
-            About
-          </NavLink>
-        </li>
-        <li>
-          <NavLink 
-            to="/projects" 
-            className={({ isActive }) => isActive ? "container-link text-gray-900" : "container-link"}
-          >
-            Projects
-          </NavLink>
-        </li>
-      </ul>
-    </nav>
+    <>
+      <div className="p-2 flex justify-center">
+        <NavLink to="/" className="p-4 mx-2 text-lg">Home</NavLink>
+        <NavLink to="/about" className="p-4 mx-2">About</NavLink>
+        <NavLink to="/projects" className="p-4 mx-2">Projects</NavLink>
+      </div>
+    </>
   );
 };
 

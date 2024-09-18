@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <div className="bg-gray-100">
+    <div>
     {routeSystem()}
     </div>
   </React.StrictMode>
