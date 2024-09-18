@@ -57,7 +57,7 @@ const projects: IProject[] = [
         Description: "A simple shell implementation in C, handling command execution, piping, redirection, and environment variable expansion.",
         Link: "https://github.com/PedroVMota/Minishell", // Add the link to the project repository or demo
         Image: "/Minishell.jpg", // Add an image or logo for the project
-        usedTech: ["C", "Shell Scripting", "Linux", "System Calls", "POSIX", "Process Management", "Unix", "Forks", "Makefile"],
+        usedTech: ["C/C++", "Shell Scripting", "Linux", "System Calls", "POSIX", "Process Management", "Unix", "Forks", "Makefile"],
     },
     {
         Type: "Done",
@@ -65,7 +65,7 @@ const projects: IProject[] = [
         Description: "A project visualizing fractals through efficient algorithms, using stack manipulation to optimize operations.",
         Link: "https://github.com/PedroVMota/Fractol",
         Image: "/Fractol.png", // Add an image or logo for the project
-        usedTech: ["C", "Algorithms", "Data Structures", "Fractal Geometry", "Graphics Programming", "Math Algorithms", "Makefile"],
+        usedTech: ["C/C++", "Algorithms", "Data Structures", "Fractal Geometry", "Graphics Programming", "Math Algorithms", "Makefile"],
     },
     {
         Type: "Done",
@@ -73,15 +73,15 @@ const projects: IProject[] = [
         Description: "A basic ray tracing engine that renders simple 3D shapes, showcasing the fundamentals of rendering.",
         Link: "https://github.com/PedroVMota/MiniRT",
         Image: "/MiniRT.png",
-        usedTech: ["C", "Ray Tracing", "3D Rendering", "Linear Algebra", "Lighting Algorithms", "Math Functions", "Makefile"],
+        usedTech: ["C/C++", "Ray Tracing", "3D Rendering", "Linear Algebra", "Lighting Algorithms", "Math Functions", "Makefile"],
     },
     {
         Type: "Done",
         Title: "FT_IRC",
-        Description: "An implementation of the IRC protocol in C, allowing multiple clients to communicate over a network.",
+        Description: "An implementation of the IRC protocol in C++, allowing multiple clients to communicate over a network, you can make your own chat room, send files, images and you can also interect with a bot.",
         Link: "https://github.com/PedroVMota/FT_IRC-Chat-Hex-Compatibility-",
         Image: "/FT_IRC.jpg",
-        usedTech: ["C", "Networking", "IRC Protocol", "Sockets", "Multithreading", "Concurrency", "TCP/IP", "Makefile"],
+        usedTech: ["C/C++", "Networking", "IRC Protocol", "Sockets", "Multithreading", "Concurrency", "TCP/IP", "Makefile"],
     },
     {
         Type: "Done",
