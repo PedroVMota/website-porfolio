@@ -35,17 +35,20 @@ const aboutMe: IAboutMe[] = [
     {
         title: "About Me",
         description:
-            "Hey there! I'm a software engineer who loves diving into creative problem-solving. I'm all about taking on challenges and finding fresh ways to improve my skills. Right now, I'm playing around with AWS, Django, and Rust, pushing myself to build cool, dynamic web apps. I'm always up for learning something new and working under pressure doesn't scare me—it actually fuels me!",
+            //"Hey there! I'm a software engineer who loves diving into creative problem-solving. I'm all about taking on challenges and finding fresh ways to improve my skills. Right now, I'm playing around with AWS, Django, and Rust, pushing myself to build cool, dynamic web apps. I'm always up for learning something new and working under pressure doesn't scare me—it actually fuels me!",
+            "Hey there! How lovely to see you here! I guess that if you are here it's more likely that you want to know a little bit more about me. I'm a software engineer who loves diving into creative problem-solving. I'm all about taking on challenges and finding fresh ways to improve my skills. Right now, I'm playing around with AWS, Django, and Rust, pushing myself to build cool, dynamic web apps. I'm always up for learning something new and working under pressure doesn't scare me—it actually fuels me, and includeing from 2 years ago my interest in ai development is growing more and more, in the future I want to implement my own AI with some little game that I'm developing in my free time.",
     },
     {
         title: "Passionate & Determined",
         description:
-            "I'm super passionate about tech and always hungry to learn more. Whether it's figuring out a tricky algorithm or picking up a new coding language, I love the challenge. My drive to keep growing keeps me excited about every new project I dive into.",
+            //"I'm super passionate about tech and always hungry to learn more. Whether it's figuring out a tricky algorithm or picking up a new coding language, I love the challenge. My drive to keep growing keeps me excited about every new project I dive into.",
+            "I'm a **Nerd** and I'm always trying something new, using new techonoloies and learning new things, I'm super passionate about tech and always hungry to learn more. Whether it's figuring out a tricky algorithm or picking up a new coding language, I love the challenge. My drive to keep growing keeps me excited about every new project I dive into.",
     },
     {
         title: "Problem Solver & Fast Thinker",
         description:
-            "Problem-solving is my thing, especially when things get tough. I can think on my feet and find the quickest, smartest solutions. When the pressure's on, that's when I really thrive—whether it's optimizing code or coming up with real-time fixes, I'm all in.",
+            //"Problem-solving is my thing, especially when things get tough. I can think on my feet and find the quickest, smartest solutions. When the pressure's on, that's when I really thrive—whether it's optimizing code or coming up with real-time fixes, I'm all in.",
+            "Okey, I thing this is a good softkill that I have, like I said I enjoy challenges and I'm always trying to solve problems, I can think on my feet and find the quickest, smartest solutions. When the pressure's on, that's when I really thrive—whether it's optimizing code or coming up with real-time fixes, I'm all in. In the future I plan to open a Blog or something, still thinking about it, so I can have your feedback and share my knowledge with you.",
     },
 ];
 
@@ -56,7 +59,7 @@ const projects: IProject[] = [
         Title: "Minishell",
         Description: "A simple shell implementation in C, handling command execution, piping, redirection, and environment variable expansion.",
         Link: "https://github.com/PedroVMota/Minishell", // Add the link to the project repository or demo
-        Image: "/Minishell.jpg", // Add an image or logo for the project
+        Image: "/Images/Minishell.jpg", // Add an image or logo for the project
         usedTech: ["C/C++", "Shell Scripting", "Linux", "System Calls", "POSIX", "Process Management", "Unix", "Forks", "Makefile"],
     },
     {
@@ -64,7 +67,7 @@ const projects: IProject[] = [
         Title: "Fractol",
         Description: "A project visualizing fractals through efficient algorithms, using stack manipulation to optimize operations.",
         Link: "https://github.com/PedroVMota/Fractol",
-        Image: "/Fractol.png", // Add an image or logo for the project
+        Image: "/Images/Fractol.png", // Add an image or logo for the project
         usedTech: ["C/C++", "Algorithms", "Data Structures", "Fractal Geometry", "Graphics Programming", "Math Algorithms", "Makefile"],
     },
     {
@@ -72,7 +75,7 @@ const projects: IProject[] = [
         Title: "MiniRT",
         Description: "A basic ray tracing engine that renders simple 3D shapes, showcasing the fundamentals of rendering.",
         Link: "https://github.com/PedroVMota/MiniRT",
-        Image: "/MiniRT.png",
+        Image: "/Images/MiniRT.png",
         usedTech: ["C/C++", "Ray Tracing", "3D Rendering", "Linear Algebra", "Lighting Algorithms", "Math Functions", "Makefile"],
     },
     {
@@ -80,7 +83,7 @@ const projects: IProject[] = [
         Title: "FT_IRC",
         Description: "An implementation of the IRC protocol in C++, allowing multiple clients to communicate over a network, you can make your own chat room, send files, images and you can also interect with a bot.",
         Link: "https://github.com/PedroVMota/FT_IRC-Chat-Hex-Compatibility-",
-        Image: "/FT_IRC.jpg",
+        Image: "/Images/FT_IRC.jpg",
         usedTech: ["C/C++", "Networking", "IRC Protocol", "Sockets", "Multithreading", "Concurrency", "TCP/IP", "Makefile"],
     },
     {
@@ -88,7 +91,7 @@ const projects: IProject[] = [
         Title: "Inception",
         Description: "A project that builds and deploys multiple Docker containers, focusing on system architecture and deployment automation.",
         Link: "https://github.com/PedroVMota/Inception",
-        Image: "/Wordpress.png",
+        Image: "/Images/Wordpress.png",
         usedTech: ["Docker", "System Architecture", "Automation", "Nginx", "WordPress", "MariaDB", "Virtualization", "CI/CD", "SSL"],
     },
     {
@@ -96,7 +99,7 @@ const projects: IProject[] = [
         Title: "FT_Transcendence",
         Description: "A web development project creating a dynamic website where users can play games, chat, and manage profiles.",
         Link: undefined, // Add the link to the project repository or demo
-        Image: "/FT_Transcendence.png", // Add an image or logo for the project
+        Image: "/Images/FT_Transcendence.png", // Add an image or logo for the project
         usedTech: ["Javascript", "Django", "HTML", "CSS", "Python", "PostgreSQL", "JWT Authentication", "WebSockets", "HTTP", "SSL"],
     }
 ];

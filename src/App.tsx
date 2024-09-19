@@ -1,104 +1,153 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import About from './AboutMe/AboutMe';
-import Menu from './Menu/Menu';
-import Project from './Projects/project';
-import { bestProjects } from './utils/Interfaces';
-import { Link } from 'react-router-dom';
+// import React from 'react';
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import About from './AboutMe/AboutMe';
+// // import Menu from './Menu/Menu';
+// import Project from './Projects/project';
+// // import { bestProjects } from './utils/Interfaces';
+// // import { Link } from 'react-router-dom';
+// import '@mui/material';
+// import { ArrowBack, ArrowBackIosNew, ArrowForward, ArrowForwardIos, ArrowForwardSharp, ArrowRightAltOutlined } from '@mui/icons-material';
+// import { TypeAnimation } from 'react-type-animation';
 
-export const routeSystem = () => {
-  return (
-    <Router>
-      <Menu />
-      <Routes>
-        <Route path="/" element={<div><App /></div>} />
-        <Route path="about" element={<About />} />
-        <Route path="projects" element={<Project />} />
-      </Routes>
-    </Router>
-  );
-};
+// export const routeSystem = () => {
 
-const BestProjects = ({ number }: { number: number }) => {
-  const selectedProjects = bestProjects.slice(0, number);
-  return (
-    <div className="flex justify-center flex-col items-center mb-12">
-      <div className="rounded-lg max-w-6xl w-full p-6 flex flex-col shadow-lg">
-        <div className="lg:w-full w-full p-4">
-          <h2 className='text-xl font-semibold text-gray-500'>
-              Introduction
-          </h2>
-          <div className='text-gray-600 my-4'>
-            Here are some of my best works projects I truly enjoyed and am proud to share with you. Feel free to explore the details by checking out the project cards below.
-          </div>
-          <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full">
-            {selectedProjects.map((project, index) => (
-              <div
-                key={index}
-                onClick={() => project.Link && window.open(project.Link, "_blank")}
-                className="bg-white rounded-lg p-6 hover:shadow-xl transition-shadow duration-300  shadow-md"
-              >
-                {project.Image && (
-                  <div className="overflow-hidden rounded-lg mb-4">
-                    <img
-                      src={project.Image}
-                      alt={project.Title}
-                      className="w-full h-48 object-cover transform transition-transform duration-300 hover:scale-105"
-                    />
-                  </div>
-                )}
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                  {project.Title}
-                </h3>
-                <p className="text-gray-600 mb-4">{project.Description}</p>
-                {project.usedTech && (
-                  <div className="flex flex-wrap mb-4">
-                    {project.usedTech.map((tech, techIndex) => (
-                      <span
-                        key={techIndex}
-                        className="bg-blue-100 text-blue-500 text-xs font-medium mr-2 mb-2 px-3 py-1 rounded-full"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-        <div className='flex flex-col'>
-          {/* Header */}
-          <div className='p-4'>
-            <h2 className='text-xl font-semibold text-gray-500'>
-              Introduction
-            </h2>
-            <div className='text-gray-600 my-4'>
-              Welcome to my portfolio! I'm Pedro Mota, a creative and driven individual passionate about solving <strong className='font-semibold'>challenges</strong> and pushing the boundaries of <strong className='font-semibold'>knowledge</strong>. My focus is on <strong className='font-semibold'>web development</strong> and <strong className='font-semibold'>AI</strong>, where I strive to build solutions that are both <strong className='font-semibold'>practical</strong> and <strong className='font-semibold'>visually appealing</strong>.
-            </div>
-            <div className='text-gray-600 my-4'>
-              I love diving into <strong className='font-semibold'>new technologies</strong> and thrive on learning. With experience in diverse projects, my goal is always to create tools that are not only <strong className='font-semibold'>useful</strong> but also elevate the <strong className='font-semibold'>user experience</strong>. From developing <strong className='font-semibold'>dynamic web applications</strong> to exploring the potential of <strong className='font-semibold'>AI</strong>, I'm excited to share my journey and work with you.
-            </div>
+//   return (
+//     <Router>
+//       {/* <Menu /> */}
+//       <Routes>
+//         <Route path="/" element={<App />} />
+//         <Route path="about" element={<About />} />
+//         <Route path="projects" element={<Project />} />
+//       </Routes>
+//     </Router>
+//   );
+// };
 
-            <p className='text-gray-600 my-4'>
-              Feel free to explore some of my projects:
-            </p>
-            <div className='flex items-center'>
-              <Link to='/projects' className='text-blue-500 hover:underline text-cyan-800 font-bold'> Projects </Link>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
+// /*
+// const BestProjects = ({ number }: { number: number }) => {
+//   const selectedProjects = bestProjects.slice(0, number);
+//   return (
+//     <div className="w-full flex flex-col items-center">
+//       <div className="w-full h-96 bg-cyan-800 flex items-center justify-center">
+//         <h1 className="text-4xl text-white">Best Projects</h1>
+//       </div>
+//     </div>
+//   );
+// };
+// */
+
+
+// function App() {
+//   const [Scroll, setScroll] = React.useState(0);
+//   React.useEffect(() => {
+//     window.addEventListener("scroll", () => {
+//       setScroll(window.scrollY);
+//       console.log(Scroll);
+//     });
+//   }, []);
+
+//   return (
+//     <div className="h-screen relative m-h-screen bg-black">
+//       <div className="w-full h-screen flex items-center justify-center flex-col">
+//         <h1 className="text-6xl text-white font-bold">Welcome, I'm Pedro</h1>
+//         <div className="flex items-center justify-center overflow-hidden text-slate-50">
+//           <TypeAnimation
+//             sequence={[
+//               "Software Developer",
+//               500,
+//               "Web Developer",
+//               500,
+//             ]}
+//           />
+//           <ArrowForwardSharp />
+//         </div>
+//       </div>
+
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+import React from "react";
+import { TypeAnimation } from 'react-type-animation'; // Assuming you're using this library
+import "@mui/icons-material";
+import { ArrowDownwardRounded } from "@mui/icons-material";
+import About from "./AboutMe/AboutMe";
 
 
 function App() {
+  const [scrollY, setScrollY] = React.useState<number>(() => {
+    // Check if there's a saved scroll position in localStorage and return it, otherwise default to 0
+    const savedScroll = localStorage.getItem('scrollPosition');
+    return savedScroll ? parseInt(savedScroll) : 0;
+  });
+
+  // Track vertical scroll position
+  React.useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+      localStorage.setItem('scrollPosition', window.scrollY.toString()); // Save scroll position to localStorage
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  // Scroll to the last saved position when the component mounts
+  React.useEffect(() => {
+    if (scrollY > 0) {
+      window.scrollTo(0, scrollY);
+    }
+  }, [scrollY]);
+
   return (
-    <div className="flex flex-col items-center h-screen">
-      <BestProjects number={3} />
-      {/* <About /> */}
+    <div className="relative h-full w-screen">
+      <section>
+        <div className="h-screen relative m-h-screen bg-black" style={{
+          backgroundImage: "url(/Images/Fractol.png)",
+          backgroundSize: "cover",
+          backgroundPosition: `50% ${scrollY * 0.5}px`,
+
+        }}>
+          <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 blur-4xl"></div>
+          <div className={`w-full h-screen flex items-center justify-center flex-col`}
+            style={{
+              transform: `translateY(${-scrollY * 0.25}px)`,
+              opacity: 1 - scrollY / 300,
+            }}
+          >
+            <h1 className="text-6xl text-white font-bold">Welcome, I'm Pedro</h1>
+            <div className="flex items-center justify-center overflow-hidden text-slate-50 transition-transform duration-300 ease-in-out">
+              <TypeAnimation
+                sequence={[
+                  "Software Developer",
+                  1000,
+                  "Web Developer",
+                  1000,
+                ]}
+                wrapper="span"
+                speed={50}
+                style={{ fontSize: '2em', display: 'inline-block' }}
+                repeat={Infinity}
+                className="blur-4xl" />
+            </div>
+          </div>
+          <ArrowDownwardRounded className="absolute bottom-4 left-1/2 text-white text-4xl bounce" style={
+            {
+              transform: `translateY(${-scrollY * 0.25}px)`,
+              opacity: 1 - scrollY / 300,
+            }
+          } />
+        </div>
+      </section>
+      <section className="bg-white">
+        <About ScrollPosition={scrollY} />
+      </section>
     </div>
   );
 }

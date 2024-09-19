@@ -5,15 +5,19 @@ module.exports = {
     "./public/index.html",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        softOrange: '#FFB301',
+      },
+    },
   },
   plugins: [
     function ({ addComponents }) {
       addComponents({
         '.container-link': {
           '@apply text-white hover:text-gray-400 text-gray-500 text-2xl p-2': {},
-        }
+        },
       });
-    }
-  ]
-}
+    },
+  ],
+};
